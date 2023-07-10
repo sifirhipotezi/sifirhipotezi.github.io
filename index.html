@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="pure-v2.0.6.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" type="module"></script>
+    <title>WAIS-IV — Digit Span</title>
+  </head>
+
+  <body>
+    <h2>WAIS-IV — Digit Span</h2>
+    <div id="container">
+      <input id="lang" oninput="globalThis.lang = this.value;" placeholder="en-US" value="en-US" />
+   
+      <a href="https://www.andiamo.co.uk/resources/iso-language-codes/" target="_">Codes</a>
+      <br />
+      <button id="play" data-clicked="false">PLAY</button>
+      <form>
+        <div id="textbox-container">
+          <span id="pseudo-submission" tabIndex="0">&nbsp;</span>
+          <input id="submission" type="text" />
+        </div>
+        <button id="submit-and-continue" disabled>Submit & Continue</button>
+      </form>
+      <div><label for="years">Your age in years:</label><input id="years" type="number" value="16" step="1" min="16"
+          max="79" /></div>
+      <div>
+        <table>
+          <caption>Your Scores</caption>
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Raw</th>
+              <th>IQ</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr name="forward">
+              <td>Forwards</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr name="backward">
+              <td>Backwards</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr name="sequencing">
+              <td>Sequencing</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr name="overall">
+              <td>Overall</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr name="scaled">
+              <td>Scaled</td>
+              <td colspan="2">0</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+  </body>
+
+</html>
