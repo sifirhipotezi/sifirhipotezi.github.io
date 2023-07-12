@@ -203,11 +203,11 @@ function main() {
   });
 }
 
-function speak(text, speed = 1, lang = 'en-US') {
+function speak(text, speed = 1, lang = 'tr-TR') {
   $('#play').disabled = true;
   $('#submission').disabled = true;
   const utterance = new SpeechSynthesisUtterance(text);
-  utterance.lang = $('#lang').value || 'en-US';
+  utterance.lang = $('#lang').value || 'tr-TR';
   utterance.rate = speed;
 
   utterance.addEventListener('error', ({ error }) => {
